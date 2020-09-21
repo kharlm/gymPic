@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NPa-RA-A3S">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--gymPic-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WhatFlower" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gymPic.jpeg" highlightedImage="gymPic.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="H7s-XR-inj">
+                                <rect key="frame" x="37" y="175" width="341" height="534"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="341" id="71l-U3-yCD"/>
+                                    <constraint firstAttribute="height" constant="452" id="FqI-2L-6ZM"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To identify a gym equipment tap the camera icon at the top right of the page" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fqa-uu-77q">
+                                <rect key="frame" x="37" y="717" width="341" height="83"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="341" id="3WD-mA-5hI"/>
+                                    <constraint firstAttribute="height" constant="83" id="7Kq-rp-vi7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to gymPic" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1PS-Sv-VS3" customClass="Label">
+                                <rect key="frame" x="74" y="112" width="304" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="304" id="Ann-Pb-Hne"/>
+                                    <constraint firstAttribute="height" constant="30" id="e4N-9q-JdU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fqa-uu-77q" firstAttribute="top" secondItem="H7s-XR-inj" secondAttribute="bottom" constant="8" id="0Mb-dv-bGa"/>
+                            <constraint firstItem="H7s-XR-inj" firstAttribute="top" secondItem="1PS-Sv-VS3" secondAttribute="bottom" constant="33" id="3rY-si-VEG"/>
+                            <constraint firstItem="H7s-XR-inj" firstAttribute="top" secondItem="1PS-Sv-VS3" secondAttribute="bottom" constant="33" id="7at-1H-bNy"/>
+                            <constraint firstItem="1PS-Sv-VS3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="24" id="Bwr-CF-LBY"/>
+                            <constraint firstItem="H7s-XR-inj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="37" id="Gc6-99-01k"/>
+                            <constraint firstItem="fqa-uu-77q" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="37" id="HIZ-sg-9y8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fqa-uu-77q" secondAttribute="trailing" constant="36" id="LEv-AH-ftG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fqa-uu-77q" secondAttribute="bottom" constant="62" id="UoW-ZQ-1si"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="H7s-XR-inj" secondAttribute="trailing" constant="36" id="gF1-hn-RBV"/>
+                            <constraint firstItem="1PS-Sv-VS3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="74" id="nXP-hR-s3E"/>
+                            <constraint firstItem="fqa-uu-77q" firstAttribute="top" secondItem="H7s-XR-inj" secondAttribute="bottom" constant="8" id="oMd-ew-bPR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1PS-Sv-VS3" secondAttribute="trailing" constant="36" id="vuS-8Q-qPF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="gymPic" id="pGq-hM-cSX">
+                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="yLy-Uk-k0V">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="cameraTapped:" destination="BYZ-38-t0r" id="fvE-wQ-lir"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="headerLabel" destination="1PS-Sv-VS3" id="gfr-U2-22K"/>
+                        <outlet property="imageView" destination="H7s-XR-inj" id="g8F-D6-eMS"/>
+                        <segue destination="aDV-59-VGP" kind="presentation" identifier="EquipmentResult" id="3Oq-Gg-nea"/>
+                        <segue destination="cye-Cd-lum" kind="presentation" identifier="showResult" destinationCreationSelector="showResults:" id="QWq-SC-Eak"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="117.39130434782609"/>
+        </scene>
+        <!--Results View Controller-->
+        <scene sceneID="gjd-TU-ivM">
+            <objects>
+                <viewController id="aDV-59-VGP" customClass="ResultsViewController" customModule="WhatFlower" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rpX-xE-3li">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hello" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FNz-Gh-jFA">
+                                <rect key="frame" x="66" y="233" width="267" height="119"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="vun-se-HL2"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tOj-tU-CbU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1234.7826086956522" y="805.58035714285711"/>
+        </scene>
+        <!--gymPic-->
+        <scene sceneID="GML-dN-kiN">
+            <objects>
+                <navigationController title="gymPic" automaticallyAdjustsScrollViewInsets="NO" id="NPa-RA-A3S" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="TVe-91-vYz">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="fEf-XJ-kGW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ugu-4c-A5r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="117.85714285714285"/>
+        </scene>
+        <!--Hosting Controller-->
+        <scene sceneID="fpU-vr-CkM">
+            <objects>
+                <hostingController id="cye-Cd-lum" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HUU-Y8-5Ys" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="243" y="-555"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="gymPic.jpeg" width="1950" height="1300"/>
+    </resources>
+</document>
